@@ -17,7 +17,7 @@ function Home() {
 
 
         const loadLaunches = () => {
-            fetch('https://ll.thespacedevs.com/2.2.0/launch/')
+            fetch('https://ll.thespacedevs.com/2.2.0/launch/')  
             .then(response => response.json())
             .then(launches=> setLaunchList(launches['results']))
             .catch(error => console.log('error', error))

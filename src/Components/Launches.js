@@ -19,8 +19,8 @@ function Launches({list, addToList, clickedMission}) {
                     <div className='Launches'>
                     <h1>{list.mission.name}</h1>
                     <h4>{list.mission.type}</h4>
-                    <button onClick={clickAddToList }>Save Launch</button>
-                    <button onClick={clickMission}>Mission Information</button>
+                    <button className='button' onClick={clickAddToList }>Save Launch</button>
+                    <button className='button' onClick={clickMission}>Mission Information</button>
                     </div>
                 </li>
             </>

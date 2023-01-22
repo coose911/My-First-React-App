@@ -1,0 +1,40 @@
+.MissionClass{
+ 
+}
+
+.Rocket{
+    font-family: monospace;
+    font-weight: 100px;
+    font-size: 70px;
+}
+
+.MissionDetails{
+    font-family: monospace;
+    font-weight: 100px;
+    font-size: 70px;
+}
+
+
+.LaunchPadInfo{
+    font-family: monospace;
+    font-weight: 100px;
+    font-size: 70px;
+}
+
+.LaunchStatus{
+    font-family: monospace;
+    font-weight: 100px;
+    font-size: 70px;
+}
+
+.RocketName{
+    font-size:45px;
+    color: red;
+}
+
+.MissionInfoText{
+    text-decoration-line: underline;
+    border-color: #2F4F4F;
+    font-size: 20px;
+
+}

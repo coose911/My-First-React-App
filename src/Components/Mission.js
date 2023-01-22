@@ -1,4 +1,5 @@
 import React from 'react'
+import './Mission.css'
 
 const Mission = ({mission}) => {
 
@@ -6,17 +7,24 @@ const Mission = ({mission}) => {
 
 
     return (    
-            <>  <h1>Rocket</h1>
-                <p>{mission.rocket.configuration.name}</p>
-                <h3>Mission Details</h3>
-                <p>{mission.mission.type}</p>
-                <p>{mission.mission.description}</p>
-                <p>{mission.mission.orbit.name}</p>
-                <h3>Launch pad information</h3>
-                <p>{mission.pad.location.name}</p>
-                <h3>Launch Status</h3>
-                <p>{mission.status.name}</p>
-                <p>{mission.status.description}</p>
+            <>  
+                <div className='MissionClass'>
+                    <h1 className='Rocket'>Rocket</h1>
+                    <p className='RocketName'>{mission.rocket.configuration.name}</p>
+                    <hr></hr>
+                    <h3 className='MissionDetails'>Mission Details</h3>
+                    <p className='MissionInfoText'>{mission.mission.type}</p>
+                    <p className='MissionInfoText'>{mission.mission.description}</p>
+                    <p className='MissionInfoText'>{mission.mission.orbit.name}</p>
+                    <hr></hr>
+                    <h3 className='LaunchPadInfo'>Launch Pad Location</h3>
+                    <p className='MissionInfoText'>{mission.pad.location.name}</p>
+                    <hr></hr>
+                    <h3 className='LaunchStatus'>Launch Status :</h3>
+                    <p className='MissionInfoText'>{mission.status.name}</p>
+                    <p className='MissionInfoText'>{mission.status.description}</p>
+                    <hr></hr>
+                </div>
             </>
     );
 }

@@ -9,8 +9,8 @@ function SavedLaunches({missionList}) {
 
     return ( 
             <>
-            <h1>Saved Launches</h1>
-            <h6 className='SavedLaunches' >{listedMissions}</h6>
+            
+            <h2 className='SavedLaunches' >{listedMissions}</h2>
             </>
             
             );

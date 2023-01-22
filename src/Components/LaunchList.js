@@ -18,8 +18,11 @@ function LaunchList({launchList, addToList, clickedMission}) {
             <>
                 <div className=''>
                     <ul>
-                        <h1>Launchlist</h1>
+                        <h1 className='launch-list-title'>Launchlist</h1>
+                        <hr></hr>
                         {listOfLaunches}
+                        <hr></hr>
+                        <h1 className='saved-launch-list-title'>Saved Launches</h1>
                     </ul>
                 </div>
             </>
