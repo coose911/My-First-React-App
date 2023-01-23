@@ -7,9 +7,10 @@ function SavedLaunches({missionList}) {
         return <li>{mission.name}</li>
     })
 
+    
+
     return ( 
             <>
-            
             <h2 className='SavedLaunches' >{listedMissions}</h2>
             </>
             

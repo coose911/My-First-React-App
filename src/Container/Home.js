@@ -10,6 +10,7 @@ function Home() {
     const [launchList, setLaunchList] = useState([])
     const [missionList, setMissionList] = useState('')
     const [mission, setMission] = useState('')
+    const [wiki, setwiki] = useState(false)
 
     useEffect(() => {
         loadLaunches()
@@ -33,6 +34,10 @@ function Home() {
             setMission(missionObject)
         }
 
+        // const clickedWiki = (wikiObject) => {
+        //     setWiki(wikiObject)
+        // }
+
 
     return ( 
             <>  
@@ -40,6 +45,7 @@ function Home() {
                 {!mission && <LaunchList launchList={launchList} addToList={addToList} clickedMission={clickedMission}/>}
                 {missionList && <SavedLaunches missionList={missionList}/>}
                 {mission && <Mission mission={mission}/>}
+
             </>
     );
 }
